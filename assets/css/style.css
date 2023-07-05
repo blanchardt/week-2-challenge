@@ -4,3 +4,36 @@
     padding:0;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
+
+/* Element selectors */
+body {
+    background-color: #839791;
+}
+
+header {  
+    height: 115px;
+    width: 100%;
+    line-height: 60px;
+    padding: 20px;
+    background-color: lightcoral;
+    color: #0E1116;
+    border-bottom: 20px solid #F3FFB6;
+}
+
+header h1 {
+    display: inline;
+    font-size: 225%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+a {
+    color: #839791;
+}
+
+/* Class Selectors */
+.float-right {
+    float: right;
+}
