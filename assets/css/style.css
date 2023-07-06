@@ -1,3 +1,10 @@
+:root {
+    --primary: lightcoral;
+    --secondary: #F3FFB6;
+    --background: #8d9c98;
+    --main--text: #0E1116;
+}
+
 /* Universal selector */
 * {
     margin:0;
@@ -7,30 +14,41 @@
 
 /* Element selectors */
 body {
-    background-color: #839791;
+    background-color: var(--background);
 }
 
-header {  
+header { 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
     height: 115px;
     width: 100%;
     line-height: 60px;
-    padding: 20px;
-    background-color: lightcoral;
-    color: #0E1116;
-    border-bottom: 20px solid #F3FFB6;
+    padding: 1%;
+    background-color: var(--primary);
+    color: var(--main--text);
+    border-bottom: 20px solid var(--secondary);
 }
 
-header h1 {
+h1 {
     display: inline;
     font-size: 225%;
 }
 
-nav ul li {
-    display: inline;
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    font-weight: bold;
+}
+
+nav li {
+    margin: 7px;
 }
 
 a {
-    color: #839791;
+    font-size: 125%;
+    color: var(--background);
 }
 
 /* Class Selectors */
