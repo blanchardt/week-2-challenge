@@ -28,6 +28,7 @@ header {
     background-color: var(--primary);
     color: var(--main--text);
     border-bottom: 20px solid var(--secondary);
+    margin-bottom: 20px;
 }
 
 h1 {
@@ -55,3 +56,14 @@ a {
 .float-right {
     float: right;
 }
+
+.profile-image {
+    height: 500px;
+    width: 700px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+}
+/*add styling for 1080px screen lengths for the image*/
