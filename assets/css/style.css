@@ -1,8 +1,9 @@
 :root {
-    --primary: lightcoral;
+    --primary: #550213;
     --secondary: #F3FFB6;
     --background: #8d9c98;
     --main--text: #0E1116;
+    --border--color: lightcoral;
 }
 
 /* Universal selector */
@@ -23,7 +24,7 @@ header {
     align-items: center;
     height: 115px;
     width: 100%;
-    line-height: 60px;
+    line-height: 43px;
     padding: 1%;
     background-color: var(--primary);
     color: var(--main--text);
@@ -33,7 +34,13 @@ header {
 
 h1 {
     display: inline;
+    text-align: left;
     font-size: 225%;
+    padding: 10px;
+    border: 5px solid var(--border--color);
+    width: 500px;
+    height: 70px;
+    background-color: var(--border--color);
 }
 
 nav ul {
