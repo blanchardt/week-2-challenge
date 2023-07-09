@@ -4,6 +4,7 @@
     --background: #8d9c98;
     --main--text: #0E1116;
     --border--color: lightcoral;
+    --first--application--height: 450px;
 }
 
 /* Universal selector */
@@ -53,6 +54,11 @@ h2 {
     text-align: right;
 }
 
+h3 {
+    font-size: 170%;
+    padding-bottom: 5px;
+}
+
 /*use the display flex to get the child tags to fit onto the same line*/
 section {
     display: flex;
@@ -86,7 +92,22 @@ nav a {
     color: var(--background);
 }
 
+/*provide css changes for the images and links inside the works section*/
+
+
+
+a div {
+    width: 25%;
+    background-color: var(--border--color);
+    border: 10px solid var(--border--color);
+}
+
 /* ID Selectors with child Element Selectors*/ 
+
+
+#work img {
+    border: 6px solid var(--border--color);
+}
 
 #contact-me ul {
     display: flex;
@@ -107,6 +128,12 @@ nav a {
     font-weight: bold;
 }
 
+#work .remaining-applications {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 /* Class Selectors */
 
 .float-right {
@@ -121,6 +148,31 @@ nav a {
     line-height: 150%;
     color: var(--main--text)
 }
+
+.first-application {
+    position: relative;
+    width: 100%;
+    height: var(--first--application--height);
+}
+
+/*reposition the link text over the image.*/
+
+.absolute-section {
+    position: relative;
+}
+
+.absolute-section div, .first-application div {
+    position: absolute;
+    bottom: 16px;
+    left: 6px;
+  }
+
+/*set the size for first application*/
+.first-application img {
+    width: 100%;
+    height: var(--first--application--height);
+}
+
 
 /*style changing to the profile image below the header*/
 .profile-image {
