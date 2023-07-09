@@ -36,7 +36,7 @@ header {
 h1 {
     display: inline;
     text-align: left;
-    font-size: 230%;
+    font-size: 250%;
     padding: 10px;
     border: 5px solid var(--border--color);
     width: 500px;
@@ -46,8 +46,9 @@ h1 {
 
 h2 {
     margin: 25px 25px 25px 0px;
-    font-size: 175%; 
-    flex: 0 0 12%;
+    font-size: 225%; 
+    line-height: 135%;
+    flex: 0 0 25%;
     flex-wrap: wrap;
     text-align: right;
 }
@@ -73,12 +74,33 @@ nav a {
 /*use the display flex to get the child tags to fit onto the same line*/
 section {
     display: flex;
+    width: 100%
 }
 
 /*provide a border line in between the headers and the other child html tags*/
 h2 + * {
     border-left: 5px solid var(--main--text);
     padding: 1.5%;
+}
+
+/* ID Selectors with child Element Selectors*/ 
+
+#contact-me ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#contact-me li {
+    flex: 1 1 33%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#contact-me a {
+    color: var(--main--text);
+    font-size: 140%;    
+    font-weight: bold;
 }
 
 /* Class Selectors */
@@ -93,11 +115,7 @@ h2 + * {
 
 .bio p {
     line-height: 150%;
-}
-
-/*Add padding to the left to get the second word of the headings onto a new line*/
-.sections {
-    padding-left: 10.5%;
+    color: var(--main--text)
 }
 
 .profile-image {
