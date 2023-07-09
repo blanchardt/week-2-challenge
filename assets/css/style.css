@@ -53,6 +53,20 @@ h2 {
     text-align: right;
 }
 
+/*use the display flex to get the child tags to fit onto the same line*/
+section {
+    display: flex;
+    width: 100%
+}
+
+/*provide a border line in between the headers and the other child html tags*/
+h2 + * {
+    border-left: 5px solid var(--main--text);
+    padding: 1.5%;
+}
+
+/*provide css changes to the navigaion in the header*/
+
 nav ul {
     display: flex;
     justify-content: space-between;
@@ -69,18 +83,6 @@ nav li {
 nav a {
     font-size: 125%;
     color: var(--background);
-}
-
-/*use the display flex to get the child tags to fit onto the same line*/
-section {
-    display: flex;
-    width: 100%
-}
-
-/*provide a border line in between the headers and the other child html tags*/
-h2 + * {
-    border-left: 5px solid var(--main--text);
-    padding: 1.5%;
 }
 
 /* ID Selectors with child Element Selectors*/ 
@@ -119,6 +121,7 @@ h2 + * {
     color: var(--main--text)
 }
 
+/*style changing to the profile image below the header*/
 .profile-image {
     height: 500px;
     width: 700px;
