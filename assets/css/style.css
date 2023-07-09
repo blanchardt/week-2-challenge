@@ -92,10 +92,7 @@ nav a {
     color: var(--background);
 }
 
-/*provide css changes for the images and links inside the works section*/
-
-
-
+/*provide css changes for the the text inside the works section*/
 a div {
     width: 25%;
     background-color: var(--border--color);
@@ -103,7 +100,6 @@ a div {
 }
 
 /* ID Selectors with child Element Selectors*/ 
-
 
 #work img {
     border: 6px solid var(--border--color);
@@ -128,6 +124,8 @@ a div {
     font-weight: bold;
 }
 
+/*ID Selectors with child Class Selectors*/
+
 #work .remaining-applications {
     display: flex;
     width: 100%;
@@ -140,15 +138,18 @@ a div {
     float: right;
 }
 
+/*Styling for the first parapraph to provide spacing between the paragraphs in the about me section*/
 .intro {
     padding-bottom: 35px;
 }
 
+/*styling for the paragraphs in the about me section*/
 .bio p {
     line-height: 150%;
     color: var(--main--text)
 }
 
+/*styling specifically for the first work that is displayed on the web page.*/
 .first-application {
     position: relative;
     width: 100%;
