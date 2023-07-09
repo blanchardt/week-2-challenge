@@ -5,6 +5,7 @@
     --main--text: #0E1116;
     --border--color: lightcoral;
     --first--application--height: 450px;
+    --remaining--application--height: 225px;
 }
 
 /* Universal selector */
@@ -52,6 +53,7 @@ h2 {
     flex: 0 0 25%;
     flex-wrap: wrap;
     text-align: right;
+    padding-top: 6px;
 }
 
 h3 {
@@ -93,10 +95,21 @@ nav a {
 }
 
 /*provide css changes for the the text inside the works section*/
-a div {
+
+.first-application div {
     width: 25%;
     background-color: var(--border--color);
     border: 10px solid var(--border--color);
+}
+
+.remaining-applications div {
+    width: 38%;
+    background-color: var(--border--color);
+    border: 10px solid var(--border--color);
+}
+
+.remaining-applications a {
+    padding: 8px;
 }
 
 /* ID Selectors with child Element Selectors*/ 
@@ -138,6 +151,10 @@ a div {
     float: right;
 }
 
+.full-width {
+    width: 100%;
+}
+
 /*Styling for the first parapraph to provide spacing between the paragraphs in the about me section*/
 .intro {
     padding-bottom: 35px;
@@ -154,6 +171,14 @@ a div {
     position: relative;
     width: 100%;
     height: var(--first--application--height);
+    padding: 8px;
+}
+
+.remaining-applications {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 16px;
 }
 
 /*reposition the link text over the image.*/
@@ -164,8 +189,8 @@ a div {
 
 .absolute-section div, .first-application div {
     position: absolute;
-    bottom: 16px;
-    left: 6px;
+    bottom: 26px;
+    left: 14px;
   }
 
 /*set the size for first application*/
@@ -174,6 +199,15 @@ a div {
     height: var(--first--application--height);
 }
 
+/*set the size for the remaining applications*/
+.remaining-applications img {
+    width: 100%;
+    height: var(--remaining--application--height);
+}
+
+.remaining-applications a {
+    flex: 0 0 50%;
+}
 
 /*style changing to the profile image below the header*/
 .profile-image {
