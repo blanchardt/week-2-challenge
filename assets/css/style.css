@@ -4,8 +4,9 @@
     --background: #8d9c98;
     --main--text: #0E1116;
     --border--color: lightcoral;
+    --image--hue: #f8cccc;
     --first--application--height: 450px;
-    --remaining--application--height: 225px;
+    --remaining--application--height: 200px;
 }
 
 /* Universal selector */
@@ -96,13 +97,13 @@ nav a {
 
 /*provide css changes for the the text inside the works section*/
 
-.first-application div {
+.first-application  .link-text {
     width: 25%;
     background-color: var(--border--color);
     border: 10px solid var(--border--color);
 }
 
-.remaining-applications div {
+.remaining-applications .link-text {
     width: 38%;
     background-color: var(--border--color);
     border: 10px solid var(--border--color);
@@ -114,8 +115,11 @@ nav a {
 
 /* ID Selectors with child Element Selectors*/ 
 
+/*Went to https://stackoverflow.com/questions/42341479/add-hue-to-a-regular-image-with-css to 
+find info on how to apply a hue over an image.  Also credited in the README file.*/
 #work img {
     border: 6px solid var(--border--color);
+    mix-blend-mode: overlay;
 }
 
 #contact-me ul {
@@ -174,11 +178,25 @@ nav a {
     padding: 8px;
 }
 
+/*styling for the other links in the work section.*/
 .remaining-applications {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     padding-top: 16px;
+}
+/*apply hue to images in the work section*/
+.background-hue {
+    background-color: var(--image--hue);
+}
+
+/*remove hue on hover.*/
+.first-application:hover .background-hue {
+    background-color: transparent;
+}
+
+.remaining-applications a:hover .background-hue {
+    background-color: transparent;
 }
 
 /*reposition the link text over the image.*/
@@ -187,7 +205,7 @@ nav a {
     position: relative;
 }
 
-.absolute-section div, .first-application div {
+.absolute-section .link-text, .first-application .link-text {
     position: absolute;
     bottom: 26px;
     left: 14px;
