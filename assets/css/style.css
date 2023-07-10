@@ -5,10 +5,15 @@
     --main--text: #0E1116;
     --border--color: lightcoral;
     --image--hue: #f8cccc;
+    --first--application--overlay--height: 462px;
     --first--application--height: 450px;
+    --remaining--application--overlay--height: 212px;
     --remaining--application--height: 200px;
-    --small--first-height: 370px;
+    --small--first--overlay--height: 382px;
+    --small--first--height: 370px;
+    --small--remaining--overlay--height: 177px;
     --small--remaining--height: 165px;
+    --smallest--overlay--height: 152px;
     --smallest--height: 140px;
 }
 
@@ -124,7 +129,6 @@ find info on how to apply a hue over an image.  Also credited in the README file
 /*user7592255, et al. “Add Hue to a Regular Image with CSS.” Stack Overflow, 28 Feb. 2017, 
     stackoverflow.com/questions/42341479/add-hue-to-a-regular-image-with-css.*/
 #work img {
-    border: 6px solid var(--border--color);
     mix-blend-mode: overlay;
 }
 
@@ -190,11 +194,21 @@ find info on how to apply a hue over an image.  Also credited in the README file
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-top: 16px;
+    padding-top: 28px;
 }
+
 /*apply hue to images in the work section*/
 .background-hue {
     background-color: var(--image--hue);
+    border: 6px solid var(--border--color);
+}
+
+.first-application .background-hue {
+    height: var(--first--application--overlay--height);
+}
+
+.remaining-applications .background-hue {
+    height: var(--remaining--application--overlay--height);
 }
 
 /*remove hue on hover.*/
@@ -253,16 +267,24 @@ find info on how to apply a hue over an image.  Also credited in the README file
     }
 
     .first-application {
-        height: var(--small--first-height);
+        height: var(--small--first--height);
     }
 
     .first-application img {
-        height: var(--small--first-height);
+        height: var(--small--first--height);
     }
 
     .remaining-applications img {
         width: 100%;
         height: var(--small--remaining--height);
+    }
+
+    .first-application .background-hue {
+        height: var(--small--first--overlay--height);
+    }
+    
+    .remaining-applications .background-hue {
+        height: var(--small--remaining--overlay--height);
     }
 
     /*Have the non first (remaining) works be put into a single column*/
@@ -322,6 +344,10 @@ find info on how to apply a hue over an image.  Also credited in the README file
     .remaining-applications img {
         width: 100%;
         height: var(--smallest--height);
+    }
+
+    .first-application .background-hue, .remaining-applications .background-hue {
+        height: var(--smallest--overlay--height);
     }
 
     /*readjust link text over images*/
