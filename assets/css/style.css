@@ -7,6 +7,9 @@
     --image--hue: #f8cccc;
     --first--application--height: 450px;
     --remaining--application--height: 200px;
+    --small--first-height: 370px;
+    --small--remaining--height: 165px;
+    --smallest--height: 140px;
 }
 
 /* Universal selector */
@@ -79,6 +82,7 @@ h2 + * {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     min-width: 300px;
     font-weight: bold;
@@ -126,6 +130,7 @@ find info on how to apply a hue over an image.  Also credited in the README file
 
 #contact-me ul {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
     padding-bottom: 0;
@@ -239,4 +244,101 @@ find info on how to apply a hue over an image.  Also credited in the README file
     display: block;
     border-radius: 50%;
 }
-/*add styling for 1080px screen lengths for the image*/
+
+/*add styling for 1080px screen lengths for the images*/
+@media screen and (max-width: 1080px) {
+    .profile-image {
+        height: 400px;
+        width: 570px;
+    }
+
+    .first-application {
+        height: var(--small--first-height);
+    }
+
+    .first-application img {
+        height: var(--small--first-height);
+    }
+
+    .remaining-applications img {
+        width: 100%;
+        height: var(--small--remaining--height);
+    }
+
+    /*Have the non first (remaining) works be put into a single column*/
+    .remaining-applications a {
+        flex: 0 0 100%;
+    }
+
+    .first-application  .link-text {
+        width: 32%;
+    }
+
+    .remaining-applications .link-text {
+        width: 28%;
+    }
+  }
+
+  /*adjust the header to flow better at 1040px or smaller screens.*/
+  @media screen and (max-width: 1040px) {
+    h1 {
+        width: auto;
+        height: auto;
+    }
+
+    header {
+        height: auto;
+        border-bottom: transparent;
+    }
+  }
+
+  /*adjust the nav links at 730px or smaller screens.*/
+  @media screen and (max-width: 730px) {
+    nav li {
+        flex: 0 0 45%;
+    }
+  }
+
+  /*add styling for 700px screen lengths for the images and font size for better
+  redability*/
+  @media screen and (max-width: 700px) {
+    body {
+        font-size: 15px;
+    }
+
+    .profile-image {
+        height: 325px;
+        width: 425px;
+    }
+
+    .first-application {
+        height: var(--smallest--height);
+    }
+
+    .first-application img {
+        height: var(--smallest--height);
+    }
+
+    .remaining-applications img {
+        width: 100%;
+        height: var(--smallest--height);
+    }
+
+    /*readjust link text over images*/
+    .first-application .link-text {
+        bottom: 1px;
+    }
+
+    .absolute-section .link-text{
+        bottom: 20px;
+    }
+
+    .remaining-applications .link-text, .first-application  .link-text {
+        width: 29%;
+    }
+
+    /*readjust contact me links to flow better.*/
+    #contact-me li {
+        flex: 1 1 100%;
+    }
+  }
