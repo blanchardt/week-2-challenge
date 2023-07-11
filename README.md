@@ -31,7 +31,7 @@ Onak, Graham. “How to Create a Click to Call Link Using HTML and in WordPress.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;www.gaintap.com/archives/clickable-website-phone-number-and-call-tracking-guide/.
 
 styles.css:
-line 132:
-Went to https://stackoverflow.com/questions/42341479/add-hue-to-a-regular-image-with-css to find info on how to apply a hue over an image.  
+line 132:  
+Went to https://stackoverflow.com/questions/42341479/add-hue-to-a-regular-image-with-css to find info on how to apply a hue over an image.    
 user7592255, et al. “Add Hue to a Regular Image with CSS.” Stack Overflow, 28 Feb. 2017, 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;stackoverflow.com/questions/42341479/add-hue-to-a-regular-image-with-css.
