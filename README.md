@@ -4,9 +4,15 @@ Create a portfolio about my self for employers to view my work samples.
 
 ## Project Description
 The page is a responsive webpage and changes as the screen gets smaller.  
-Desktop:  
+Desktop:   
+![Header, Profile pic, and About me Section](./assets/images/desktop_top.png)  
+![Work Section](./assets/images/desktop_middle.png)  
+![Contact Me](./assets/images/desktop_bottom.png)  
 
-Mobile:
+Mobile:  
+![Mobile: Header, Profile pic, and About me Section](./assets/images/mobile_top.png)  
+![Mobile: Work Section](./assets/images/mobile_middle.png)  
+![Mobile: Contact Me](./assets/images/mobile_bottom.png)  
 
 Using the navigation in the top right of the header, you will be able to quickly navigate to those sections on the page, or download my resume. 
 Each image in the "Works" section will act like a link as well to bring you to the live site of that work.  Upon hovering over an image
