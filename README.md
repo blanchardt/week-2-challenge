@@ -23,7 +23,7 @@ The link to the repo for this project is located at: https://github.com/blanchar
 You can use this link to get to the live site: https://blanchardt.github.io/week-2-challenge/
 
 ## Credits
-Modified by: Trevor Blanchard
+Modified by: Trevor Blanchard  
 index.html:    
 
 line 33:  
