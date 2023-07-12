@@ -24,7 +24,8 @@ You can use this link to get to the live site: https://blanchardt.github.io/week
 
 ## Credits
 Modified by: Trevor Blanchard
-index.html:  
+index.html:    
+
 line 33:  
 Went to https://www.w3schools.com/tags/att_a_download.asp to find info on how to have links download files when clicked on.  
 “HTML &lt;a&gt; Download Attribute.” HTML a Download Attribute, www.w3schools.com/tags/att_a_download.asp. 
@@ -36,7 +37,8 @@ number when clicked on.
 Onak, Graham. “How to Create a Click to Call Link Using HTML and in WordPress.” GainTap, 28 July 2021,   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;www.gaintap.com/archives/clickable-website-phone-number-and-call-tracking-guide/.
 
-styles.css:
+styles.css:  
+
 line 132:  
 Went to https://stackoverflow.com/questions/42341479/add-hue-to-a-regular-image-with-css to find info on how to apply a hue over an image.    
 user7592255, et al. “Add Hue to a Regular Image with CSS.” Stack Overflow, 28 Feb. 2017, 
